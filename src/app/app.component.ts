@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import '@cds/core/button/register.js';
 
 @Component({
   selector: 'app-root',
