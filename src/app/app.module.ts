@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ClarityModule } from '@clr/angular';
+import { ShowStockPriceComponent } from './show-stock-price/show-stock-price.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShowStockPriceComponent
   ],
   imports: [
     BrowserModule,

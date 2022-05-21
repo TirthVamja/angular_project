@@ -6,7 +6,9 @@
   </clr-alert-item>
 </clr-alert>
 <button class="btn btn-primary">Primary</button>
-<button class="btn btn-success">Success</button>
+<button class="btn btn-success" (click)="showComponent('stockPriceComponent')">
+  Show Stock Price
+</button>
 <button class="btn btn-warning">Warning</button>
 <button class="btn btn-danger">Danger</button>
 <button class="btn btn-danger" disabled>Disabled</button>
@@ -18,3 +20,7 @@
 <button class="btn btn-danger-outline">Danger</button>
 <button class="btn btn-outline" disabled>Disabled</button>
 <!-- <router-outlet></router-outlet> -->
+
+<div id="comp-render" *ngIf="display == 'stockPriceComponent'">
+  <app-show-stock-price></app-show-stock-price>
+</div>
