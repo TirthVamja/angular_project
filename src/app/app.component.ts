@@ -15,6 +15,7 @@ export class AppComponent {
 
   showComponent(x:string){
     this.display=x;
+    console.log(x)
   }
 
 

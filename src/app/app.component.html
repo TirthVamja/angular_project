@@ -5,7 +5,12 @@
     </span>
   </clr-alert-item>
 </clr-alert>
-<button class="btn btn-primary">Primary</button>
+<button
+  class="btn btn-primary"
+  (click)="showComponent('stockPriceListComponent')"
+>
+  Primary
+</button>
 <button class="btn btn-success" (click)="showComponent('stockPriceComponent')">
   Show Stock Price
 </button>
@@ -22,5 +27,8 @@
 <!-- <router-outlet></router-outlet> -->
 
 <div id="comp-render" *ngIf="display == 'stockPriceComponent'">
+  <app-show-stock-price></app-show-stock-price>
+</div>
+<div id="comp-render" *ngIf="display == 'stockPriceListComponent'">
   <app-show-stock-price></app-show-stock-price>
 </div>

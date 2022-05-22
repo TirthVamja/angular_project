@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {ShowStockPriceService} from '../services/show-stock-price.service';
 @Component({
   selector: 'app-show-stock-price',
   templateUrl: './show-stock-price.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowStockPriceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private stockService:ShowStockPriceService) { }
 
-  ngOnInit(): void {
+  data:any
+
+  ngOnInit(){
+    this.stockService.getData().subscribe((data)=>{this.data=data});
+    console.log(this.data);
   }
 
 }

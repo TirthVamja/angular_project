@@ -1,1 +1,14 @@
-<p>dekho stock-price kaam karne laga!</p>
+<ul *ngFor="let x of data">
+  <li>
+    {{ x.summary }}
+  </li>
+  <li>
+    {{ x["temperatureC"] }}
+  </li>
+  <li>
+    {{ x["temperatureF"] }}
+  </li>
+  <li>
+    {{ x["date"] | date: "dd/MMM/yyyy" }}
+  </li>
+</ul>
