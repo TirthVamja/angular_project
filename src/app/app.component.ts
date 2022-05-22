@@ -8,19 +8,7 @@ import '@cds/core/button/register.js';
 })
 export class AppComponent {
   title = 'demo';
-  display = ""
   ngOnInit(){
-    this.display = "";
   }
-
-  showComponent(x:string){
-    this.display=x;
-    console.log(x)
-  }
-
-
-
-
-
 
 }
